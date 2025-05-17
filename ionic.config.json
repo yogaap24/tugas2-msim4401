@@ -1,0 +1,7 @@
+{
+  "name": "tugas2-msim4401-yoga",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
