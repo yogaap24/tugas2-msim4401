@@ -1,2 +1,18 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+/* src/theme/variables.css */
+
+/* ====== Light mode (default) ====== */
+/* src/theme/variables.css */
+
+/* Light mode (default) */
+:root.ios {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+    --ion-toolbar-background: #ffffff;
+    --ion-toolbar-color: #000000;
+    --ion-color-step-50: #f0f0f0;
+    --ion-border-color: #cccccc;
+    --ion-color-primary: #3880ff;
+    --ion-color-primary-rgb: 56, 128, 255;
+}
