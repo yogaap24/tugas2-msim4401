@@ -22,7 +22,7 @@
             <tr v-for="coin in cryptos" :key="coin.id">
               <td>{{ coin.name }}</td>
               <td>{{ coin.symbol }}</td>
-              <td>{{ formatPrice(coin.price_usd) }}</td>
+              <td>{{ coin.price_usd }}</td>
             </tr>
           </tbody>
         </table>
@@ -66,12 +66,7 @@ export default defineComponent({
       }
     };
 
-    const formatPrice = (p: string) => {
-      // Tambah thousand separator
-      return Number(p).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
-    };
-
-    return { cryptos, loadData, formatPrice, handleScroll };
+    return { cryptos, loadData, handleScroll };
   }
 });
 </script>
@@ -121,8 +116,7 @@ ion-button {
 }
 
 .crypto-table thead {
-  background-color: var(--ion-color-primary);
-  color: white;
+  color: #010101;
   border: 1px solid var(--ion-border-color);
 }
 

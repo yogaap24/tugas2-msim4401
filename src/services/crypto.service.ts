@@ -14,7 +14,6 @@ export default {
             throw new Error(`Error fetching data: ${res.status} ${res.statusText}`);
         }
         const json = await res.json();
-        // Struktur respons: { data: Crypto[] }
         return json.data as Crypto[];
     }
 };
